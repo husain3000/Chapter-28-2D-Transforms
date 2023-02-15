@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Origin</title>
+</head>
+<style>
+    div{
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: teal;
+        transition: 1s;
+        padding-top: 200px;
+    }
+    .div1{
+        transform-origin: 100% 100% ;
+    }
+    .div2{
+        transform-origin: 200% 200%;
+    }
+    div:hover{
+        transform: rotate(90deg);
+    }
+</style>
+<body>
+    <div class="div1"></div>
+
+    <div class="div2"></div>
+</body>
+</html>
